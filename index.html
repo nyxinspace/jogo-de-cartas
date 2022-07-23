@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<head>
+    <script>
+          $(document).ready(function() {
+          $('#example').DataTable();
+           } );
+    </script>
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script src="https://cdn.datatables.net/1.10.22/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/1.10.22/js/dataTables.semanticui.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.3.1/semantic.min.js"></script>
+    <meta charset="utf-8">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.3.1/semantic.min.css">
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.10.22/css/dataTables.semanticui.min.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+</head>
+<body>
+  <h1 style="margin-left: 60%;margin-top:5%;">Tabela de competidores:</h1>
+    <div class="container"  style="margin-top: 7%; width: 40%; margin-left: 5%;">
+   
+      <form style="margin-left: 40%;" action="card.php" method="post">
+        Insira seu nome: <br>
+        <input type="text" name="nome" placeholder="Nome"><br>
+        Selecione o tempo:<br>
+        <select name="tempo"> 
+              <option value="35">35 segundos</option>
+              <option value="1">1 minuto</option>
+              <option value="2">2 minutos</option>
+        </select><br>
+        Selecione o número de cartas: <br>
+        <select name="numero_seq">
+              <option value="5">5 cartas</option>
+              <option value="10">10 cartas</option>
+              <option value="15">15 cartas</option>
+        </select><br><br>
+        <input type="submit" value="Confirmar"><br>
+      </form>
+    </div>
+    <table id="example " class="ui celled table" style="width:40%; margin-left: 50%; margin-top: -10%;">
+        
+      <thead>
+          <tr>
+              <th>Name</th>
+              <th>Position</th>
+              <th>Office</th>
+              <th>Age</th>
+              <th>Start date</th>
+              <th>Salary</th>
+          </tr>
+      </thead>
+      <tbody>
+          <tr>
+              <td>Tiger Nixon</td>
+              <td>System Architect</td>
+              <td>Edinburgh</td>
+              <td>61</td>
+              <td>2011/04/25</td>
+              <td>$320,800</td>
+          </tr>
+          <tr>
+              <td>Garrett Winters</td>
+              <td>Accountant</td>
+              <td>Tokyo</td>
+              <td>63</td>
+              <td>2011/07/25</td>
+              <td>$170,750</td>
+          </tr>
+          <tr>
+              <td>Ashton Cox</td>
+              <td>Junior Technical Author</td>
+              <td>San Francisco</td>
+              <td>66</td>
+              <td>2009/01/12</td>
+              <td>$86,000</td>
+          </tr>
+          <tr>
+              <td>Cedric Kelly</td>
+              <td>Senior Javascript Developer</td>
+              <td>Edinburgh</td>
+              <td>22</td>
+              <td>2012/03/29</td>
+              <td>$433,060</td>
+          </tr>
+          <tr>
+              <td>Airi Satou</td>
+              <td>Accountant</td>
+              <td>Tokyo</td>
+              <td>33</td>
+              <td>2008/11/28</td>
+              <td>$162,700</td>
+          </tr>
+          <tr>
+              <td>Brielle Williamson</td>
+              <td>Integration Specialist</td>
+              <td>New York</td>
+              <td>61</td>
+              <td>2012/12/02</td>
+              <td>$372,000</td>
+          </tr>
+          <tr>
+              <td>Herrod Chandler</td>
+              <td>Sales Assistant</td>
+              <td>San Francisco</td>
+              <td>59</td>
+              <td>2012/08/06</td>
+              <td>$137,500</td>
+          </tr>
+          <tr>
+              <td>Rhona Davidson</td>
+              <td>Integration Specialist</td>
+              <td>Tokyo</td>
+              <td>55</td>
+              <td>2010/10/14</td>
+              <td>$327,900</td>
+          </tr>
+         
+  </table>
+    
+    
+   
+</body>
+</html>
